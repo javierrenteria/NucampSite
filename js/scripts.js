@@ -12,9 +12,13 @@
                 }
             });
         });
-        /** The $ indicates the start of JQuery
-        *   JQuery for tooltip activation
-        *   $(function () {
-        *   $('[data-toggle="tooltip"]').tooltip()
-        *   }) 
-        */
+        
+        //Function to toggle header buttons
+        $(function() {
+            $("#reserveButton").click(function() {
+                $("#reserveModal").modal("toggle");
+            });
+            $("#loginButton").click(function() {
+                $("#loginModal").modal("toggle");
+            });
+        });
